@@ -500,7 +500,7 @@ namespace big
         // Reset Network Complaints
         {
             "RENC",
-            "E8 ? ? ? ? 8B 8B ? ? ? ? 03 CF",
+            "E8 ? ? ? ? 83 BB 70 10 00 00 00",
             [](memory::handle ptr)
             {
                 g_pointers->m_gta.m_reset_network_complaints = ptr.add(1).rip().as<functions::reset_network_complaints>();
